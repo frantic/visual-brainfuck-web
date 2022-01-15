@@ -1,12 +1,13 @@
 $("#run").click(function() {
-    let data = [0,0,0,0]
+    let data = [0,0,0,0,0,0,0,0,0,0]
     let dindex = 0
     let cindex = 0
     function update() {
-        $("#1").text(data[0])
-        $("#2").text(data[1])
-        $("#3").text(data[2])
-        $("#4").text(data[3])
+        let i = 0
+        while(i < data.length) {
+            $("#" + new String(i + 1)).text(data[i])
+            i += 1
+        }
     }
     let code = $("#text").val()
     while(cindex < code.length) {
