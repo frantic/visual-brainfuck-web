@@ -1,18 +1,24 @@
 #run {
-    width:60px;
-    height:30px;
-    border-radius:2px;
+    width:120px;
+    height:60px;
     background-color:#666;
     color:#fefefe;
-    font-size:15px;
+    font-size:30px;
 }
 
 #text {
-    width:500px;
-    height:300px;
-    border-radius:5px;
+    width:800px;
+    height:400px;
     border-color:#333;
     background-color:#333;
     color:#eee;
-    font-size:10px;
+    font-size:20px;
+}
+
+#showData {
+    width:240px;
+    height:60px;
+    background-color:#666;
+    color:#eee;
+    font-size:30px;
 }
