@@ -22,3 +22,12 @@
     color:#eee;
     font-size:30px;
 }
+
+#data {
+    padding:4px;
+    margin:5px;
+    margin-left:1px;
+    background-color:#666;
+    color:#eee;
+    font-size:20px;
+}

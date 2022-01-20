@@ -5,6 +5,7 @@ $("#run").click(function() {
     let dindex = 0
     let cindex = 0
     let code = $("#text").val()
+    let stack = []
     while(cindex < code.length) {
         if(code[cindex] == "+") {
             data[dindex] += 1
@@ -19,6 +20,13 @@ $("#run").click(function() {
             if(dindex > 0) {
                 dindex -= 1
             }
+        } else if(code[cindex] == "[") {
+            stack.push(cindex + 1)
+        } else if(code[cindex] == "]") {
+            if(data[dindex])
+                cindex = stack[stack.length - 1];
+            else
+                stack.pop();
         }
         cindex += 1
     }
