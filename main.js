@@ -1,4 +1,3 @@
-window.data = [0]
 $("#data").hide()
 
 $("#run").click(function() {
@@ -8,6 +7,7 @@ $("#run").click(function() {
     let code = $("#text").val()
     let input = $("#io").val()
     let output = ""
+    let data = [0]
     let stack = []
     while(cindex < code.length) {
         if(code[cindex] == "+") {
@@ -35,6 +35,10 @@ $("#run").click(function() {
             iindex += 1
         } else if(code[cindex] == ".") {
             output += String.fromCharCode(data[dindex])
+        } else if(code[cindex] == "#") {
+            while(cindex < code.length && code[cindex] != "\n") {
+                cindex += 1
+            }
         }
         cindex += 1
     }
