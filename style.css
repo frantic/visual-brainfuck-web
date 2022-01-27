@@ -1,3 +1,7 @@
+body {
+    padding:20px;
+}
+
 #run {
     height:40px;
     background-color:#666;
@@ -9,7 +13,7 @@
 
 #text {
     width:97%;
-    height:400px;
+    height:450px;
     border-color:#333;
     border-radius:0px;
     background-color:#333;
@@ -26,7 +30,9 @@
 }
 
 #data {
-    padding:4px;
+    border-radius:10px;
+    padding:5px;
+    padding-left:10px;
     margin:5px;
     margin-left:1px;
     background-color:#666;
@@ -40,6 +46,7 @@
 }
 
 #iolabel {
+    border-radius:10px;
     padding:4px;
     background-color:#aaa;
     width:5%;
@@ -52,7 +59,7 @@
 }
 
 #io {
-    border-radius:0px;
+    border-radius:10px;
     border-color:#333;
     background-color:#333;
     margin:5px;
