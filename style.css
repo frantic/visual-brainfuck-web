@@ -1,7 +1,12 @@
+html, body {
+    background-color:white;
+}
+
 #run {
     width:20%;
     height:60px;
     background-color:#666;
+    border-color:#666;
     color:#fefefe;
     font-size:25px;
 }
@@ -20,6 +25,7 @@
     width:25%;
     height:60px;
     background-color:#666;
+    border-color:#666;
     color:#eee;
     font-size:25px;
 }
