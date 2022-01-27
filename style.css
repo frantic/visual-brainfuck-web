@@ -1,10 +1,10 @@
 #run {
-    width:20%;
-    height:60px;
+    height:40px;
     background-color:#666;
     border-color:#666;
     color:#fefefe;
-    font-size:25px;
+    font-size:20px;
+    align-text:center;
 }
 
 #text {
@@ -14,16 +14,15 @@
     border-radius:0px;
     background-color:#333;
     color:#eee;
-    font-size:20px;
+    font-size:15px;
 }
 
 #showData {
-    width:25%;
-    height:60px;
+    height:40px;
     background-color:#666;
     border-color:#666;
     color:#eee;
-    font-size:25px;
+    font-size:20px;
 }
 
 #data {
@@ -43,11 +42,11 @@
 #iolabel {
     padding:4px;
     background-color:#aaa;
-    width:6%;
+    width:5%;
     margin:5px;
     margin-left:1px;
     color:#fff;
-    font-size:25px;
+    font-size:20px;
     font-family:sans-serif;
     text-align:center;
 }
