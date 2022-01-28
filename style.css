@@ -1,8 +1,8 @@
 body {
-    padding:20px;
+    padding:30px;
 }
 
-#run {
+#run, #showData {
     height:40px;
     background-color:#666;
     border-color:#666;
@@ -21,12 +21,9 @@ body {
     font-size:15px;
 }
 
-#showData {
-    height:40px;
-    background-color:#666;
-    border-color:#666;
-    color:#eee;
-    font-size:20px;
+#text:focus {
+    border-radius:10px;
+    background-color:#555;
 }
 
 #data {
@@ -35,7 +32,7 @@ body {
     padding-left:10px;
     margin:5px;
     margin-left:1px;
-    background-color:#666;
+    background-color:#444;
     color:#eee;
     font-size:20px;
     font-family:sans-serif;
@@ -46,7 +43,6 @@ body {
 }
 
 #iolabel {
-    border-radius:10px;
     padding:4px;
     background-color:#aaa;
     width:5%;
@@ -59,7 +55,7 @@ body {
 }
 
 #io {
-    border-radius:10px;
+    border-radius:0px;
     border-color:#333;
     background-color:#333;
     margin:5px;
@@ -67,4 +63,9 @@ body {
     color:#eee;
     font-size:20px;
     font-family:sans-serif;
+}
+
+#io:focus {
+    border-radius:10px;
+    background-color:#555;
 }
