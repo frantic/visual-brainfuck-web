@@ -1,6 +1,6 @@
 # BFWeb
 
-A Brainf*ck interpreter online. Visit [BFWeb Girhub Page](https://zhangzheheng12345.github.io/BFWeb) to have a try.
+A Brainf*ck interpreter online. Visit [BFWeb Github Page](https://zhangzheheng12345.github.io/BFWeb) to have a try.
 If you have any idea about what Brainf*ck exactly is, visit [esolangs.org, brainf*ck](https://esolangs.org/wiki/brainfuck)
 
 ### How to use
