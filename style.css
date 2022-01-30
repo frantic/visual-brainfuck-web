@@ -2,9 +2,19 @@ body {
     padding:40px;
 }
 
-span {
-    font-size:22px;
-    font-family:sans-serif;
+#header {
+    display:flex;
+    align-items:center;
+}
+
+#header-center-sep {
+    width:15px;
+}
+
+#header-code {
+    height:50%;
+    font-size:25px;
+    font-family:fantasy;
 }
 
 #run, #showData {
@@ -13,6 +23,7 @@ span {
     border-color:#666;
     color:#fefefe;
     font-size:20px;
+    font-family:monospace;
     align-text:center;
 }
 
@@ -25,6 +36,7 @@ span {
     background-color:#333;
     color:#eee;
     font-size:18px;
+    font-family:sans-serif;
 }
 
 #text:focus {
@@ -52,12 +64,12 @@ span {
 #iolabel {
     padding:4px;
     background-color:#aaa;
-    width:5%;
+    width:7%;
     margin:5px;
     margin-left:1px;
     color:#fff;
     font-size:22px;
-    font-family:sans-serif;
+    font-family:monospace;
     text-align:center;
 }
 
@@ -66,7 +78,7 @@ span {
     border-color:#333;
     background-color:#333;
     margin:5px;
-    width:91%;
+    width:90%;
     color:#eee;
     font-size:18px;
     font-family:sans-serif;
