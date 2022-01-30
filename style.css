@@ -2,6 +2,11 @@ body {
     padding:40px;
 }
 
+span {
+    font-size:22px;
+    font-family:sans-serif;
+}
+
 #run, #showData {
     height:40px;
     background-color:#666;
