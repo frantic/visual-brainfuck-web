@@ -7,7 +7,7 @@ body {
     background-color:#666;
     border-color:#666;
     color:#fefefe;
-    font-size:22px;
+    font-size:20px;
     align-text:center;
 }
 
@@ -41,6 +41,7 @@ body {
 
 #iobox {
     display:flex;
+    align-item:center;
 }
 
 #iolabel {
@@ -50,7 +51,7 @@ body {
     margin:5px;
     margin-left:1px;
     color:#fff;
-    font-size:20px;
+    font-size:22px;
     font-family:sans-serif;
     text-align:center;
 }
@@ -62,7 +63,7 @@ body {
     margin:5px;
     width:91%;
     color:#eee;
-    font-size:22px;
+    font-size:18px;
     font-family:sans-serif;
 }
 
