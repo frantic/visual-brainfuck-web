@@ -42,7 +42,7 @@ $("#run").click(function() {
         }
         cindex += 1
     }
-    $("#data").text(data.join())
+    $("#data").text(joinData(data))
     $("#io").val(output)
 })
 
@@ -53,3 +53,10 @@ $("#showData").click(function() {
     else
         $(this).text("Show Data");
 })
+
+function joinData(data) {
+    if(data.length > 0)
+        return new String(data[0]) + " " + joinData(data.slice(1, data.length));
+    else
+        return "";
+}
