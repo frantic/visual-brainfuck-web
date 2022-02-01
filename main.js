@@ -47,7 +47,7 @@ $("#run").click(function() {
 })
 
 $("#showData").click(function() {
-    $("#data").toggle()
+    $("#data").slideToggle()
     if($(this).text() == "Show Data") 
         $(this).text("Hide Data");
     else
