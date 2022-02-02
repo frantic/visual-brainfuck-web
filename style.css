@@ -17,7 +17,7 @@ body {
     font-family:fantasy;
 }
 
-#run, #showData {
+#run, #showData, #clearCode{
     height:40px;
     background-color:#666;
     border-color:#666;
@@ -45,12 +45,22 @@ body {
 }
 
 #data {
-    border-radius:10px;
-    padding:5px;
-    padding-left:10px;
+    border-radius:5px;
+    padding:2px;
     margin:5px;
     margin-left:1px;
-    background-color:#444;
+    background-color:#ddd;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#data > * {
+    background-color:#555;
+    margin:3px;
+    padding:5px;
+    border-radius:5px;
+    width:8%;
+    text-align:center;
     color:#eee;
     font-size:20px;
     font-family:sans-serif;
