@@ -38,7 +38,7 @@ function runCode() {
                 dindex += 1
                 if(dindex >= data.length) {
                     data.push(0)
-                    $("#data").append($("<div id="+data.length+"></div>").text("0"))
+                    $("#data").append($("<div id="+(data.length-1)+"></div>").text("0"))
                     $("#"+data.length).hide().slideDown()
                 }
                 updatePtr(dindex-1)
@@ -72,5 +72,5 @@ function runCode() {
         $("#"+origin).css("background-color", "#555")
         $("#"+dindex).css("background-color", "#222")
     }
-    iterLoop()
+    setTimeout(iterLoop, 50)
 }
