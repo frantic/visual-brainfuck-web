@@ -26,7 +26,6 @@ function runCode() {
     let stack = []
     $("#data").empty()
     $("#data").append($("<div id=0></div>").text(0))
-    $("#0").hide().slideDown()
     function iterLoop() {
         if(cindex < code.length) {
             if(code[cindex] == "+") {
