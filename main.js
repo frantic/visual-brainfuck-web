@@ -1,20 +1,21 @@
+window.toRun = true
+
 $("#data").hide()
-
 $("#run").click(runCode)
-
-$("#showData").click(function() {
+$("#stop").click(() => { window.toRun = false; })
+$("#showData").click(() => {
     $("#data").slideToggle()
     if($(this).text() == "Show Data") 
         $(this).text("Hide Data");
     else
         $(this).text("Show Data");
 })
-
-$("#clearCode").click(function() {
+$("#clearCode").click(() => {
     $("#text").val("")
 })
 
 function runCode() {
+    window.toRun = true
     let dindex = 0
     let cindex = 0
     let iindex = 0
@@ -65,7 +66,9 @@ function runCode() {
                 }
             }
             cindex += 1
-            setTimeout(iterLoop, 50)
+            if(window.toRun) {
+                setTimeout(iterLoop, 50)
+            }
         }
     }
     function updatePtr(origin) {

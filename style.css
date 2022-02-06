@@ -17,7 +17,7 @@ body {
     font-family:fantasy;
 }
 
-#run, #showData, #clearCode{
+#run, #stop, #showData, #clearCode{
     height:40px;
     background-color:#666;
     border-color:#666;
