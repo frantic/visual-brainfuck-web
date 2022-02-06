@@ -67,7 +67,7 @@ function runCode() {
             }
             cindex += 1
             if(window.toRun) {
-                setTimeout(iterLoop, 50)
+                setTimeout(iterLoop, $("#delay").val())
             }
         }
     }

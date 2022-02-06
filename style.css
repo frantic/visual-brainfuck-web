@@ -1,5 +1,5 @@
 body {
-    padding:40px;
+    padding:60px;
 }
 
 #header {
@@ -17,14 +17,19 @@ body {
     font-family:fantasy;
 }
 
-#run, #stop, #showData, #clearCode{
+#run, #stop, #showData, #clearCode {
     height:40px;
     background-color:#666;
-    border-color:#666;
+    border-width:0px;
     color:#fefefe;
     font-size:20px;
     font-family:monospace;
     align-text:center;
+}
+
+#run:hover, #stop:hover, #showData:hover, #clearCode:hover {
+    background-color:#777;
+    border-radius:5px;
 }
 
 #text {
@@ -66,15 +71,14 @@ body {
     font-family:sans-serif;
 }
 
-#iobox {
+.box {
     display:flex;
-    align-item:center;
+    align-items:center;
 }
 
-#iolabel {
+.label {
     padding:4px;
     background-color:#aaa;
-    width:7%;
     margin:5px;
     margin-left:1px;
     color:#fff;
@@ -97,6 +101,13 @@ body {
 #io:focus {
     border-radius:10px;
     background-color:#555;
+}
+
+label {
+    margin:5px;
+    color:#adadad;
+    font-size:16px;
+    font-family:sans-serif;
 }
 
 p {

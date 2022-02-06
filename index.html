@@ -16,9 +16,15 @@
         <div id="data">
             <div id="1">0</div>
         </div>
-        <div id="iobox">
-            <div id="iolabel">IO:</div>
+        <div class="box">
+            <div class="label">IO:</div>
             <input id="io"/>
+        </div>
+        <div class="box">
+            <div class="label">DELAY:</div>
+            <label>0ms</label>
+            <input id="delay" type="range" min="0" max="100" value="40" step="4"/>
+            <label>100ms</label>
         </div>
         <textarea id="text">
 # This program will output "Hello world!"
