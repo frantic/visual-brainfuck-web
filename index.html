@@ -4,24 +4,19 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-        <div id="header">
-            <embed src="brain.svg" type="image/svg+xml" />
-            <div id="header-center-sep"></div>
-            <div id="header-code"> + - < > [ ] , . </div>
-        </div>
-        <button id="run">Run</button>
-        <button id="stop">Stop</button>
+        <button id="run"><embed src="svgs/play.svg" type="image/svg+xml" /></button>
+        <button id="stop"><embed src="svgs/stop.svg" type="image/svg+xml" /></button>
         <button id="showData">Show Data</button>
         <button id="clearCode">Clear Code</button>
         <div id="data">
             <div id="1">0</div>
         </div>
         <div class="box">
-            <div class="label">IO:<embed src="printer.svg" type="image/svg+xml" /></div>
+            <div class="label">IO:<embed src="svgs/printer.svg" type="image/svg+xml" /></div>
             <input id="io"/>
         </div>
         <div class="box">
-            <div class="label">DELAY:<embed src="speed.svg" type="image/svg+xml" /></div>
+            <div class="label">DELAY:<embed src="svgs/speed.svg" type="image/svg+xml" /></div>
             <label>0ms</label>
             <input id="delay" type="range" min="0" max="100" value="40" step="4"/>
             <label>100ms</label>
@@ -61,7 +56,7 @@
         <p> Github Repo: <a href="https://github.com/zhangzheheng12345/BFWeb">BFWeb</a></p>
         <p> Brainf**k Wiki: <a href="https://esolangs.org/wiki/brainfuck">Brainf**k</a></p>
         <p> Author's Github: <a href="https://github.com/zhangzheheng12345">zhangzheheng12345</a></p>
-        <p> License: MIT</p>
+        <p> License: GPL 2.0</p>
         <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
         <script src="main.js"></script>
     </body>

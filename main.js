@@ -15,6 +15,7 @@ $("#clearCode").click(() => {
 })
 
 function runCode() {
+    window.toRun = false // to stop running first
     window.toRun = true
     let dindex = 0
     let cindex = 0

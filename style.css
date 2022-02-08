@@ -2,34 +2,14 @@ body {
     padding:60px;
 }
 
-#header {
-    display:flex;
-    align-items:center;
-}
-
-#header-center-sep {
-    width:15px;
-}
-
-#header-code {
-    height:50%;
-    font-size:25px;
-    font-family:fantasy;
-}
-
 #run, #stop, #showData, #clearCode {
-    height:40px;
+    height:41px;
     background-color:#666;
     border-width:0px;
     color:#fefefe;
     font-size:20px;
     font-family:monospace;
     align-text:center;
-}
-
-#run:hover, #stop:hover, #showData:hover, #clearCode:hover {
-    background-color:#777;
-    border-radius:5px;
 }
 
 #text {
@@ -39,35 +19,29 @@ body {
     border-color:#333;
     border-radius:0px;
     background-color:#333;
-    color:#eee;
+    color:#fff;
     font-size:18px;
     font-family:sans-serif;
 }
 
-#text:focus {
-    border-radius:10px;
-    background-color:#555;
-}
-
 #data {
-    border-radius:5px;
-    padding:2px;
+    background-color:#eee;
+    padding:5px;
     margin:5px;
     margin-left:1px;
-    background-color:#ddd;
+    border-radius:5px;
     display:flex;
     flex-wrap:wrap;
 }
 
 #data > * {
-    background-color:#555;
+    background-color:#808080;
     margin:3px;
     padding:5px;
-    border-radius:5px;
     width:50px;
     text-align:center;
-    color:#eee;
-    font-size:20px;
+    color:#fff;
+    font-size:18px;
     font-family:sans-serif;
 }
 
@@ -78,7 +52,7 @@ body {
 
 .label {
     padding:4px;
-    background-color:#aaa;
+    background-color:#888;
     margin:5px;
     margin-left:1px;
     color:#fff;
@@ -93,14 +67,9 @@ body {
     background-color:#333;
     margin:5px;
     width:80%;
-    color:#eee;
+    color:#fff;
     font-size:18px;
     font-family:sans-serif;
-}
-
-#io:focus {
-    border-radius:10px;
-    background-color:#555;
 }
 
 label {
