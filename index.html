@@ -7,21 +7,20 @@
         <button id="run"><embed src="svgs/play.svg" type="image/svg+xml" /></button>
         <button id="stop"><embed src="svgs/stop.svg" type="image/svg+xml" /></button>
         <button id="showData">Show Data</button>
-        <button id="clearCode">Clear Code</button>
+        <span>
+            <embed id="speedSvg" src="svgs/speed.svg" type="image/svg+xml" />
+            <input id="speed" type="range" min="0" max="100" value="40" step="2"/>
+        </span>
         <div id="data">
             <div id="1">0</div>
         </div>
-        <div class="box">
-            <div class="label">IO:<embed src="svgs/printer.svg" type="image/svg+xml" /></div>
-            <input id="io"/>
-        </div>
-        <div class="box">
-            <div class="label">DELAY:<embed src="svgs/speed.svg" type="image/svg+xml" /></div>
-            <label>0ms</label>
-            <input id="delay" type="range" min="0" max="100" value="40" step="4"/>
-            <label>100ms</label>
-        </div>
-        <textarea id="text">
+        <div id="wrapText">
+            <div id="box">
+                <div id="label"><embed src="svgs/printer.svg" type="image/svg+xml" /></div>
+                <input id="io"/>
+                <button id="clearCode"><embed src="svgs/trash.svg" type="image/svg+xml" /></button>
+            </div>
+            <textarea id="text">
 # This program will output "Hello world!"
 +++++ +++
 [
@@ -50,7 +49,8 @@
 +++.----- -.----- ---.
 >>+.
 >++.
-        </textarea>
+            </textarea>
+        </div>
         <br/><br/>
         <hr color="#888" width="80%" size="2px"/>
         <p> Github Repo: <a href="https://github.com/zhangzheheng12345/BFWeb">BFWeb</a></p>

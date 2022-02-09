@@ -1,4 +1,5 @@
 window.toRun = true
+$("#stop").css("background-color", "#999")
 
 $("#data").hide()
 $("#run").click(runCode)
@@ -15,8 +16,9 @@ $("#clearCode").click(() => {
 })
 
 function runCode() {
-    window.toRun = false // to stop running first
     window.toRun = true
+    $("#run").css("background-color", "#aaa")
+    $("#stop").css("background-color", "#666")
     let dindex = 0
     let cindex = 0
     let iindex = 0
@@ -26,7 +28,8 @@ function runCode() {
     let data = [0]
     let stack = []
     $("#data").empty()
-    $("#data").append($("<div id=0></div>").text(0))
+    $("#data").append($("<div id='0'></div>").text(0))
+    updatePtr(0)
     function iterLoop() {
         if(cindex < code.length) {
             if(code[cindex] == "+") {
@@ -67,13 +70,19 @@ function runCode() {
             }
             cindex += 1
             if(window.toRun) {
-                setTimeout(iterLoop, $("#delay").val())
+                setTimeout(iterLoop, 100 - $("#speed").val())
+            } else {
+                $("#run").css("background-color", "#666")
+                $("#stop").css("background-color", "#aaa")
             }
+        } else {
+            $("#run").css("background-color", "#666")
+            $("#stop").css("background-color", "#aaa")
         }
     }
     function updatePtr(origin) {
-        $("#"+origin).css("background-color", "#555")
-        $("#"+dindex).css("background-color", "#222")
+        $("#"+origin).css({"background-color":"#555", "transform":"scale(1.0, 1.0)"})
+        $("#"+dindex).css({"background-color":"#222", "transform":"scale(1.1, 1.1)"})
     }
     setTimeout(iterLoop, 50)
 }

@@ -2,26 +2,57 @@ body {
     padding:60px;
 }
 
-#run, #stop, #showData, #clearCode {
+#run, #stop, #showData {
     height:41px;
     background-color:#666;
     border-width:0px;
+    border-radius:10px;
     color:#fefefe;
     font-size:20px;
     font-family:monospace;
     align-text:center;
 }
 
+span {
+    margin-left:7px;
+}
+
+#speedSvg {
+    transform:scale(1.3, 1.3)
+}
+
+#speed {
+    margin:7px;
+}
+
+#wrapText {
+    margin:5px;
+    margin-left:1px;
+    border-radius:5px;
+    background-color:#333;
+    width:100%;
+}
+
+#clearCode {
+    float:right;
+    margin:5px;
+    padding:4px;
+    background-color:#888;
+    border-width:0px;
+    border-radius:10px;
+    color:#fff;
+}
+
 #text {
     padding:20px;
-    width:97%;
     height:450px;
+    width:95%;
     border-color:#333;
     border-radius:0px;
     background-color:#333;
     color:#fff;
     font-size:18px;
-    font-family:sans-serif;
+    font-family:monospace;
 }
 
 #data {
@@ -36,56 +67,50 @@ body {
 
 #data > * {
     background-color:#808080;
-    margin:3px;
+    margin:3px:
     padding:5px;
     width:50px;
+    border-radius:5px;
     text-align:center;
     color:#fff;
     font-size:18px;
     font-family:sans-serif;
 }
 
-.box {
-    display:flex;
-    align-items:center;
+#box {
+    margin:5px;
 }
 
-.label {
+#label {
+    float:left;
     padding:4px;
     background-color:#888;
     margin:5px;
     margin-left:1px;
-    color:#fff;
-    font-size:22px;
-    font-family:monospace;
-    text-align:center;
+    border-radius:10px;
 }
 
 #io {
-    border-radius:0px;
-    border-color:#333;
-    background-color:#333;
+    float:left;
+    height:26px;
+    border-radius:5px;
+    border-width:0px;
+    background-color:#eee;
     margin:5px;
+    margin-left:0px;
     width:80%;
-    color:#fff;
+    color:#2d2d2d;
     font-size:18px;
-    font-family:sans-serif;
-}
-
-label {
-    margin:5px;
-    color:#adadad;
-    font-size:16px;
-    font-family:sans-serif;
+    font-family:monospace;
 }
 
 p {
     text-align:center;
-    color:#9e9e9e;
+    color:#999;
     font-size:15px;
     font-family:Calibri, sans-serif;
 }
 
 a {
-    color:#516fba;
+    color:#668eb8;
 }
