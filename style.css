@@ -28,6 +28,7 @@ span {
 #wrapText {
     margin:5px;
     margin-left:1px;
+    padding:2px;
     border-radius:5px;
     background-color:#333;
     width:100%;
@@ -46,13 +47,16 @@ span {
 #text {
     padding:20px;
     height:450px;
-    width:95%;
+    width:90%;
     border-color:#333;
     border-radius:0px;
     background-color:#333;
     color:#fff;
     font-size:18px;
     font-family:monospace;
+    box-sizing:border-box;
+    resize:none;
+    overflow:auto;
 }
 
 #data {
@@ -95,7 +99,7 @@ span {
     height:26px;
     border-radius:5px;
     border-width:0px;
-    background-color:#eee;
+    background-color:#fff;
     margin:5px;
     margin-left:0px;
     width:80%;

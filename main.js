@@ -59,7 +59,10 @@ function runCode() {
                 else
                     stack.pop();
             } else if(code[cindex] == ",") {
-                data[dindex] = input[iindex].charCodeAt()
+                if(iindex < input.length)
+                    data[dindex] = input[iindex].charCodeAt();
+                else
+                    data[dindex] = 0;
                 iindex += 1
             } else if(code[cindex] == ".") {
                 $("#io").val($("#io").val() + String.fromCharCode(data[dindex]))
