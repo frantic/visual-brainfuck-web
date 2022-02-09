@@ -6,10 +6,10 @@ $("#run").click(runCode)
 $("#stop").click(() => { window.toRun = false; })
 $("#showData").click(() => {
     $("#data").slideToggle()
-    if($(this).text() == "Show Data") 
-        $(this).text("Hide Data");
+    if($("#showData").text() == "Show Data") 
+        $("#showData").text("Hide Data");
     else
-        $(this).text("Show Data");
+        $("#showData").text("Show Data");
 })
 $("#clearCode").click(() => {
     $("#text").val("")
