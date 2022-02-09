@@ -60,7 +60,7 @@ span {
 }
 
 #text:focus, #io:focus {
-    outline:#fff;
+    outline:0px;
 }
 
 #data {
