@@ -59,6 +59,10 @@ span {
     overflow:auto;
 }
 
+#text:focus, #io:focus {
+    outline:#fff;
+}
+
 #data {
     background-color:#eee;
     padding:2px;
