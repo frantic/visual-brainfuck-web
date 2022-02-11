@@ -1,5 +1,5 @@
 window.toRun = true
-$("#stop").css("background-color", "#999")
+$("#stop").css("background-color", "#bbb")
 
 $("#run").click(runCode)
 $("#stop").click(() => { window.toRun = false; })
@@ -16,7 +16,7 @@ $("#clearCode").click(() => {
 
 function runCode() {
     window.toRun = true
-    $("#run").css("background-color", "#aaa")
+    $("#run").css("background-color", "#bbb")
     $("#stop").css("background-color", "#666")
     let dindex = 0
     let cindex = 0
@@ -67,7 +67,7 @@ function runCode() {
             cindex += 1
         }
         $("#run").css("background-color", "#666")
-        $("#stop").css("background-color", "#aaa")
+        $("#stop").css("background-color", "#bbb")
     }
     function iterLoop() {
         if(cindex < code.length) {
@@ -115,11 +115,11 @@ function runCode() {
                 setTimeout(iterLoop, 100 - $("#speed").val())
             } else {
                 $("#run").css("background-color", "#666")
-                $("#stop").css("background-color", "#aaa")
+                $("#stop").css("background-color", "#bbb")
             }
         } else {
             $("#run").css("background-color", "#666")
-            $("#stop").css("background-color", "#aaa")
+            $("#stop").css("background-color", "#bbb")
         }
     }
     function updatePtr(origin) {

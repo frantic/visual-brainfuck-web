@@ -4,12 +4,13 @@ body {
 
 #run, #stop, #showData {
     height:41px;
+    min-width:70px;
     background-color:#666;
     border-width:0px;
     border-radius:10px;
     color:#fefefe;
     font-size:20px;
-    font-family:monospace;
+    font-family:monospace, sans-serif;
     align-text:center;
 }
 
@@ -64,6 +65,7 @@ span {
 }
 
 #data {
+    width:100%;
     background-color:#eee;
     padding:2px;
     margin:5px;
