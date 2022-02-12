@@ -66,8 +66,7 @@ function runCode() {
             }
             cindex += 1
         }
-        $("#run").css("background-color", "#666")
-        $("#stop").css("background-color", "#bbb")
+        end()
     }
     function iterLoop() {
         if(cindex < code.length) {
@@ -114,17 +113,19 @@ function runCode() {
             if(window.toRun) {
                 setTimeout(iterLoop, 100 - $("#speed").val())
             } else {
-                $("#run").css("background-color", "#666")
-                $("#stop").css("background-color", "#bbb")
+                end()
             }
         } else {
-            $("#run").css("background-color", "#666")
-            $("#stop").css("background-color", "#bbb")
+            end()
         }
     }
     function updatePtr(origin) {
         $("#"+origin).css({"background-color":"#555", "transform":"scale(1.0, 1.0)"})
         $("#"+dindex).css({"background-color":"#222", "transform":"scale(1.1, 1.1)"})
+    }
+    function end() {
+        $("#run").css("background-color", "#666")
+        $("#stop").css("background-color", "#bbb")
     }
     if($("#showData").text() == "Show Data"){
         immRun()
