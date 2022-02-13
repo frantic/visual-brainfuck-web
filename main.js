@@ -1,5 +1,6 @@
 window.toRun = true
 window.shouldAlertHide = true
+window.dataShown = true
 $("#stop").css("background-color", "#bbb")
 
 $("#run").click(runCode)
@@ -128,7 +129,7 @@ function runCode() {
         $("#run").css("background-color", "#666")
         $("#stop").css("background-color", "#bbb")
     }
-    if($("#showData").text() == "Show Data"){
+    if(window.dataShown){
         immRun()
     } else {
         setTimeout(iterLoop, 50)
