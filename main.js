@@ -7,6 +7,7 @@ $("#run").click(runCode)
 $("#stop").click(() => { window.toRun = false; })
 $("#showData").click(() => {
     $("#data").slideToggle()
+    window.dataShown = !window.dataShown
     if(window.shouldAlertHide) {
         alert("The program will immediately output if data area is hiden.")
         window.shouldAlertHide = false
@@ -129,7 +130,7 @@ function runCode() {
         $("#run").css("background-color", "#666")
         $("#stop").css("background-color", "#bbb")
     }
-    if(window.dataShown){
+    if(!window.dataShown){
         immRun()
     } else {
         setTimeout(iterLoop, 50)
