@@ -2,16 +2,20 @@ body {
     padding:60px;
 }
 
-#run, #stop, #showData {
+#run, #stop {
     height:41px;
     min-width:70px;
     background-color:#444;
     border-width:0px;
     border-radius:10px;
-    color:#fefefe;
-    font-size:20px;
-    font-family:monospace, sans-serif;
-    align-text:center;
+}
+
+#showData {
+    height:41px;
+    width:41px;
+    background-color:#444;
+    border-width:0px;
+    border-radius:5px;
 }
 
 span {
@@ -64,12 +68,17 @@ span {
     outline:0px;
 }
 
-#data {
-    width:100%;
-    background-color:#eee;
-    padding:2px;
+#wrapData {
+    display:flex;
     margin:5px;
     margin-left:1px;
+}
+
+#data {
+    width:90%;
+    background-color:#eee;
+    padding:2px;
+    margin-left:5px;
     border-radius:5px;
     display:flex;
     flex-wrap:wrap;
@@ -77,8 +86,8 @@ span {
 
 #data > * {
     background-color:#808080;
-    margin:3px;
-    padding:5px;
+    margin:2px;
+    padding:4px;
     width:50px;
     border-radius:5px;
     text-align:center;

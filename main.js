@@ -1,14 +1,15 @@
 window.toRun = true
+window.shouldAlertHide = true
 $("#stop").css("background-color", "#bbb")
 
 $("#run").click(runCode)
 $("#stop").click(() => { window.toRun = false; })
 $("#showData").click(() => {
     $("#data").slideToggle()
-    if($("#showData").text() == "Show Data") 
-        $("#showData").text("Hide Data");
-    else
-        $("#showData").text("Show Data");
+    if(window.shouldAlertHide) {
+        alert("The program will immediately output if data area is hiden.")
+        window.shouldAlertHide = false
+    }
 })
 $("#clearCode").click(() => {
     $("#text").val("")
