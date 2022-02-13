@@ -1,5 +1,4 @@
 window.toRun = true
-window.shouldAlertHide = true
 window.dataShown = true
 $("#stop").css("background-color", "#bbb")
 
@@ -8,11 +7,11 @@ $("#stop").click(() => { window.toRun = false; })
 $("#showData").click(() => {
     $("#data").slideToggle()
     window.dataShown = !window.dataShown
-    if(window.shouldAlertHide) {
-        alert("The program will immediately output if data area is hiden.")
-        window.shouldAlertHide = false
-    }
-})
+    if(window.dataShown)
+        $("#showData").css("transform", "rotate(45deg)")
+    else
+        $("#showData").css("transform", "rotate(0deg)")
+ })
 $("#clearCode").click(() => {
     $("#text").val("")
 })
@@ -124,7 +123,7 @@ function runCode() {
     }
     function updatePtr(origin) {
         $("#"+origin).css({"background-color":"#555", "transform":"scale(1.0, 1.0)"})
-        $("#"+dindex).css({"background-color":"#222", "transform":"scale(1.1, 1.1)"})
+        $("#"+dindex).css({"background-color":"#222", "transform":"scale(1.05, 1.05)"})
     }
     function end() {
         $("#run").css("background-color", "#666")

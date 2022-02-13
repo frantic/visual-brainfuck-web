@@ -11,11 +11,14 @@ body {
 }
 
 #showData {
-    height:41px;
-    width:41px;
+    height:20px;
+    width:20px;
+    transform:rotate(45deg);
+    margin-right:10px;
+    margin-top:10px;
     background-color:#444;
     border-width:0px;
-    border-radius:5px;
+    border-radius:0px;
 }
 
 span {
@@ -72,6 +75,7 @@ span {
     display:flex;
     margin:5px;
     margin-left:1px;
+    min-height:42px;
 }
 
 #data {
