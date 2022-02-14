@@ -1,6 +1,5 @@
 window.toRun = true
 window.dataShown = true
-$("#stop").css("background-color", "#bbb")
 
 $("#run").click(runCode)
 $("#stop").click(() => { window.toRun = false; })
@@ -126,7 +125,7 @@ function runCode() {
         $("#"+dindex).css({"background-color":"#222", "transform":"scale(1.05, 1.05)"})
     }
     function end() {
-        $("#run").css("background-color", "#666")
+        $("#run").css("background-color", "#444")
         $("#stop").css("background-color", "#bbb")
     }
     if(!window.dataShown){

@@ -10,13 +10,17 @@ body {
     border-radius:10px;
 }
 
+#stop {
+    background-color:#bbb;
+}
+
 #showData {
-    height:20px;
-    width:20px;
+    height:25px;
+    width:25px;
     transform:rotate(45deg);
     margin-right:10px;
     margin-top:10px;
-    background-color:#444;
+    background-color:#666;
     border-width:0px;
     border-radius:0px;
 }
@@ -129,7 +133,7 @@ span {
 
 p {
     text-align:center;
-    color:#999;
+    color:#8f8f8f;
     font-size:15px;
     font-family:Calibri, sans-serif;
 }
