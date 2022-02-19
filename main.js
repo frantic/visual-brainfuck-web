@@ -1,5 +1,11 @@
 window.toRun = true
 window.dataShown = true
+const cookieName = "zhangzheheng12345-visual-bf-web-code"
+
+let text = $.cookie(cookieName)
+if(text) {
+    $("#text").val(text)
+}
 
 $("#run").click(runCode)
 $("#stop").click(() => { window.toRun = false; })
@@ -13,6 +19,10 @@ $("#showData").click(() => {
  })
 $("#clearCode").click(() => {
     $("#text").val("")
+    $.removeCookie(cookieName)
+})
+$("#text").change(() => {
+    $.cookie(cookieName, $("#text").val(), {expires:365})
 })
 
 function runCode() {
