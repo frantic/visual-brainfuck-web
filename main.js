@@ -8,8 +8,8 @@ if(text) {
 }
 
 $("#run").click(runCode)
-$("#stop").click(() => { window.toRun = false; })
-$("#showData").click(() => {
+$("#stop").click(function(){ window.toRun = false; })
+$("#showData").click(function(){
     $("#data").slideToggle()
     window.dataShown = !window.dataShown
     if(window.dataShown)
@@ -17,11 +17,11 @@ $("#showData").click(() => {
     else
         $("#showData").css("transform", "rotate(0deg)")
  })
-$("#clearCode").click(() => {
+$("#clearCode").click(function(){
     $("#text").val("")
     $.removeCookie(cookieName)
 })
-$("#text").change(() => {
+$("#text").change(function(){
     $.cookie(cookieName, $("#text").val(), {expires:365})
 })
 
