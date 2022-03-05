@@ -122,7 +122,7 @@ function runCode() {
             }
             cindex += 1
             if(window.toRun) {
-                setTimeout(iterLoop, 100 - $("#speed").val())
+                setTimeout(function(){iterLoop()}, 100 - $("#speed").val())
             } else {
                 end()
             }
@@ -141,6 +141,6 @@ function runCode() {
     if(!window.dataShown){
         immRun()
     } else {
-        setTimeout(iterLoop, 50)
+        setTimeout(function(){iterLoop()}, 50)
     }
 }

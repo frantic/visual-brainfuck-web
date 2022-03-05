@@ -65,7 +65,7 @@ span {
     background-color:#333;
     color:#fff;
     font-size:18px;
-    font-family:monospace;
+    font-family:monospace, sans-serif;
     box-sizing:border-box;
     resize:none;
     overflow:auto;
@@ -95,6 +95,8 @@ span {
 #data > * {
     background-color:#808080;
     margin:2px;
+    margin-left:4px;
+    margin-right:4px;
     padding:4px;
     width:50px;
     border-radius:5px;
@@ -128,7 +130,7 @@ span {
     width:80%;
     color:#2d2d2d;
     font-size:18px;
-    font-family:monospace;
+    font-family:monospace, sans-serif;
 }
 
 p {

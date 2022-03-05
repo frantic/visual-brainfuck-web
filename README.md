@@ -22,7 +22,13 @@ The trash bin button enables you to clear the Brainf\*ck code in the text area i
 
 This interpreter also provides some features which the Brainf**k standard doesn't include. For example, `#` declares a comment which continues to the end of the line. And the maximum value of a memory cell is not 255, but the maximum value of the ``` number ``` type in Javascript.
 
-### License and Thanks
+### Your support is needed ⭐️
+
+Be free to put forward issues. The website has only been tested on Safari and Chrome, and there might be problems while running in Microsoft Edge.
+
+Anyway, send email to me ( visit my Github profile to find my email ) or put an issue in Github if you meet any sort of mistake. If you are quite interested in this project and want to have a further contribution, fork & start YOUR Pull Request!
+
+### License and thanks
 
 This project is GPL 2.0 licensed and it used to be MIT licensed.
 
