@@ -133,6 +133,13 @@ span {
     font-family:monospace, sans-serif;
 }
 
+#dataHiddenReminder {
+    padding:11px;
+    font-size:18px;
+    color:#777;
+    font-family:monospace, sans-serif;
+}
+
 p {
     text-align:center;
     color:#8f8f8f;

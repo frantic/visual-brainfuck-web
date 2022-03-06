@@ -10,12 +10,18 @@ if(text) {
 $("#run").click(runCode)
 $("#stop").click(function(){ window.toRun = false; })
 $("#showData").click(function(){
-    $("#data").slideToggle()
     window.dataShown = !window.dataShown
-    if(window.dataShown)
+    if(window.dataShown) {
+        $("#dataHiddenReminder").toggle(function() {
+            $("#data").slideToggle()
+        })
         $("#showData").css("transform", "rotate(45deg)")
-    else
+    } else {
+        $("#data").slideToggle(function() {
+            $("#dataHiddenReminder").toggle()
+        })
         $("#showData").css("transform", "rotate(0deg)")
+    }
  })
 $("#clearCode").click(function(){
     $("#text").val("")
