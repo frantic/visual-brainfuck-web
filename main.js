@@ -83,7 +83,7 @@ function runCode() {
             }
             cindex += 1
         }
-        for(let i = 0; i < data.length; i++)
+        for(let i = 1; i < data.length; i++)
             $("#data").append($("<div id='"+i+"'></div>").text(data[i]));
         updatePtr(0)
         end()
