@@ -83,6 +83,9 @@ function runCode() {
             }
             cindex += 1
         }
+        for(let i = 0; i < data.length; i++)
+            $("#data").append($("<div id='"+i+"'></div>").text(data[i]));
+        updatePtr(0)
         end()
     }
     function iterLoop() {
@@ -137,7 +140,7 @@ function runCode() {
         }
     }
     function updatePtr(origin) {
-        $("#"+origin).css({"background-color":"#555", "transform":"scale(1.0, 1.0)"})
+        $("#"+origin).css({"background-color":"#808080", "transform":"scale(1.0, 1.0)"})
         $("#"+dindex).css({"background-color":"#222", "transform":"scale(1.05, 1.05)"})
     }
     function end() {
