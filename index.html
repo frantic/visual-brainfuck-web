@@ -5,15 +5,16 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-        <button id="run"><embed src="svgs/play.svg" type="image/svg+xml" /></button>
-        <button id="stop"><embed src="svgs/stop.svg" type="image/svg+xml" /></button>
+        <button id="run" onclick="runCode()"><embed src="svgs/play.svg" type="image/svg+xml" /></button>
+        <button id="stop" onclick="window.toRun = false;">
+            <embed src="svgs/stop.svg" type="image/svg+xml" /></button>
         <span>
             <embed id="speedSvg" src="svgs/speed.svg" type="image/svg+xml" />
-            <input id="speed" type="range" min="0" max="100" value="40" step="2"/>
+            <input id="speed" type="range" min="0" max="100" value="60" step="2"/>
         </span>
         <br/>
         <div id="wrapData">
-            <button id="showData"></button>
+            <button id="showData" onclick="toggleData()"></button>
             <div id="data">
                 <div id="1">0</div>
             </div>
@@ -23,9 +24,11 @@
             <div id="box">
                 <div id="label"><embed src="svgs/printer.svg" type="image/svg+xml" /></div>
                 <input id="io"/>
-                <button id="clearCode"><embed src="svgs/trash.svg" type="image/svg+xml" /></button>
+                <button id="clearCode" onclick="clearCode()">
+                    <embed src="svgs/trash.svg" type="image/svg+xml" />
+                </button>
             </div>
-            <textarea id="text">
+            <textarea id="text" onchange="saveCode()">
 # This program will output "Hello world!"
 # '#' declares a single line comment
 +++++ +++

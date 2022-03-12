@@ -53,6 +53,8 @@ span {
     background-color:#888;
     border-width:0px;
     border-radius:10px;
+    width:40px;
+    height:35px;
     color:#fff;
 }
 
@@ -117,6 +119,8 @@ span {
     margin:5px;
     margin-left:1px;
     border-radius:10px;
+    width:25px;
+    height:25px;
 }
 
 #io {

@@ -9,9 +9,10 @@ If you don't have any idea about what Brainf\*ck exactly is, visit [Brainf\*ck W
 
 The triangle button runs the Brainf\*ck code in the large text area. The white square button immediately stops the running program.
 
-* ( Attention! Do not press the run button again while the program is still running. Two programs will run in independent contexts but they will operate the same data area! If you indeed have done such thing, press the stop button to jump out of mess. But pressing the stop button several times won't cause anything bad. )
+* ( Attention! Do not press the run button again while the program is still running. Two programs will run in independent contexts but they will operate the same data area! If you indeed have done such thing, press the stop button to jump out of mess. But pressing the stop button several times won't cause anything unexpected. )
 
 The grey square button shows or hides the data area. The data area will show you how the program changes the pointer's position and changes the data in an obvious way. ( The darker and bigger block is where the pointer located. )
+If the data area is hidden, the program will be run without updating the data area, which means it will run faster. The data area will be updated when the program finishes.
 The data area won't limit the number of the cells.
 
 The slider can change the speed.
