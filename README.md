@@ -21,7 +21,7 @@ The input widget after the printer icon enables you to type your inputs ( `,` co
 
 The trash bin button enables you to clear the Brainf\*ck code in the text area in a quicker way. Besides, it will remove the cookie which memorizes your code. Click it, and all the long weird codes will disappear at once. 
 
-This interpreter also provides some features which the Brainf**k standard doesn't include. For example, `#` declares a comment which continues to the end of the line. And the maximum value of a memory cell is not 255, but the maximum value of the ``` number ``` type in Javascript.
+`#` declares a comment which continues to the end of the line. This feature is not included in standard brainfuck.
 
 ### Your support is needed ⭐️
 

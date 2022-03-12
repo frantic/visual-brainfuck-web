@@ -29,6 +29,17 @@ function saveCode(){
     $.cookie(cookieName, $("#text").val(), {expires:365})
 }
 
+function add(num) {
+    num += 1
+    if(num > 255) num = 0;
+    return num
+} 
+
+function sub(num) {
+    num -= 1
+    if(num < 0) num = 255;
+    return num
+}
 
 // Run program function
 function runCode() {
@@ -50,9 +61,9 @@ function runCode() {
     function immRun() {
         while(cindex < code.length && window.toRun) {
             if(code[cindex] == "+") {
-                data[dindex] += 1
+                data[dindex] = add(data[dindex])
             } else if(code[cindex] == "-") {
-                data[dindex] -= 1
+                data[dindex] = sub(data[dindex])
             } else if(code[cindex] == ">") {
                 dindex += 1
                 if(dindex >= data.length) {
@@ -93,10 +104,10 @@ function runCode() {
     function iterLoop() {
         if(cindex < code.length) {
             if(code[cindex] == "+") {
-                data[dindex] += 1
+                data[dindex] = add(data[dindex])
                 $("#" + dindex).text(new String(data[dindex]))
             } else if(code[cindex] == "-") {
-                data[dindex] -= 1
+                data[dindex] = sub(data[dindex])
                 $("#" + dindex).text(new String(data[dindex]))
             } else if(code[cindex] == ">") {
                 dindex += 1
