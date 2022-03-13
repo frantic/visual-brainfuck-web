@@ -4,7 +4,7 @@ body {
 
 #run, #stop {
     height:41px;
-    min-width:70px;
+    width:70px;
     background-color:#444;
     border-width:0px;
     border-radius:10px;
@@ -30,7 +30,9 @@ span {
 }
 
 #speedSvg {
-    transform:scale(1.3, 1.3)
+    transform:scale(1.3, 1.3);
+    width:25px;
+    height:17px;
 }
 
 #speed {
