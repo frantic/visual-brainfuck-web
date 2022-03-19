@@ -5,11 +5,12 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-        <button id="run" onclick="runCode()"><embed src="svgs/play.svg" type="image/svg+xml" /></button>
+        <button id="run" onclick="runCode()">
+            <img src="svgs/play.svg" type="image/svg+xml" /></button>
         <button id="stop" onclick="window.toRun = false;">
-            <embed src="svgs/stop.svg" type="image/svg+xml" /></button>
+            <img src="svgs/stop.svg" type="image/svg+xml" /></button>
         <span>
-            <embed id="speedSvg" src="svgs/speed.svg" type="image/svg+xml" />
+            <img id="speedSvg" src="svgs/speed.svg" type="image/svg+xml" />
             <input id="speed" type="range" min="0" max="100" value="60" step="2"/>
         </span>
         <br/>
@@ -19,13 +20,14 @@
                 <div id="1">0</div>
             </div>
             <div id="dataHiddenReminder" hidden>DATA AREA HIDDEN</div>
+            
         </div>
         <div id="wrapText">
             <div id="box">
                 <div id="label"><embed src="svgs/printer.svg" type="image/svg+xml" /></div>
                 <input id="io"/>
                 <button id="clearCode" onclick="clearCode()">
-                    <embed src="svgs/trash.svg" type="image/svg+xml" />
+                    <img src="svgs/trash.svg" type="image/svg+xml" />
                 </button>
             </div>
             <textarea id="text" onchange="saveCode()">

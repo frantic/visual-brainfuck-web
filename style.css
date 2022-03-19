@@ -127,13 +127,13 @@ span {
 
 #io {
     float:left;
-    height:26px;
+    height:25px;
     border-radius:5px;
     border-width:0px;
     background-color:#fff;
     margin:5px;
     margin-left:0px;
-    width:80%;
+    width:75%;
     color:#2d2d2d;
     font-size:18px;
     font-family:monospace, sans-serif;
