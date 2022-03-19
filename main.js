@@ -113,8 +113,8 @@ function runCode() {
                 dindex += 1
                 if(dindex >= data.length) {
                     data.push(0)
-                    $("#data").append($("<div id="+(data.length-1)+"></div>").text("0"))
-                    $("#"+data.length).hide().slideDown()
+                    $("#data").append(
+                    $("<div id="+(data.length-1)+"></div>").text("0").css("animation", "slidein 0.7s").css("-webkit-animation", "slidein 0.7s")) 
                 }
                 updatePtr(dindex-1)
             } else if(code[cindex] == "<") {
