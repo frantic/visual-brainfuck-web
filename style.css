@@ -83,7 +83,7 @@ span {
     background-color:#333;
     color:#fff;
     font-size:18px;
-    font-family:monospace, sans-serif;
+    font-family:Courier, Menlo, Consolas, monospace;
     box-sizing:border-box;
     resize:none;
     overflow:auto;
@@ -150,14 +150,14 @@ span {
     width:75%;
     color:#2d2d2d;
     font-size:18px;
-    font-family:monospace, sans-serif;
+    font-family:Courier, Menlo, Consolas, monospace;
 }
 
 #dataHiddenReminder {
     padding:11px;
     font-size:18px;
     color:#777;
-    font-family:monospace, sans-serif;
+    font-family:Courier, Menlo, Consolas, monospace;
 }
 
 p {
