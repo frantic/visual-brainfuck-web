@@ -128,17 +128,6 @@ span {
     margin:5px;
 }
 
-#label {
-    float:left;
-    padding:4px;
-    background-color:#888;
-    margin:5px;
-    margin-left:1px;
-    border-radius:10px;
-    width:25px;
-    height:25px;
-}
-
 #io {
     float:left;
     height:25px;
@@ -146,7 +135,6 @@ span {
     border-width:0px;
     background-color:#fff;
     margin:5px;
-    margin-left:0px;
     width:75%;
     color:#2d2d2d;
     font-size:18px;
