@@ -33,4 +33,4 @@ Anyway, send email to me ( visit my Github profile to find my email ) or put an 
 
 This project is GPL 2.0 licensed and it used to be MIT licensed.
 
-Thanks for [Iconduck](https://iconduck.com) providing such excellent icons. The run icon, stop icon, printer icon, speed showing screen icon, and the trash bin icon are all downloaded from Iconduck. They're all MIT licensed.
+Thanks for [Iconduck](https://iconduck.com) providing such excellent icons. The run icon, stop icon, speed showing screen icon, and the trash bin icon are all downloaded from Iconduck. They're all MIT licensed.
