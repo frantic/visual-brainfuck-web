@@ -1,6 +1,7 @@
 window.toRun = true
 window.dataShown = true
 const cookieName = "zhangzheheng12345-visual-bf-web-code"
+$("#stop").hide()
 
 let text = $.cookie(cookieName)
 if(text) {
@@ -10,13 +11,13 @@ if(text) {
 function toggleData(){ // Show | Hide the data area
     window.dataShown = !window.dataShown
     if(window.dataShown) {
-        $("#dataHiddenReminder").toggle(function() {
-            $("#data").slideToggle()
+        $("#dataHiddenReminder").fadeToggle("fast", function() {
+            $("#data").slideToggle("fast")
         })
         $("#showData").css("transform", "rotate(45deg)")
     } else {
-        $("#data").slideToggle(function() {
-            $("#dataHiddenReminder").toggle()
+        $("#data").slideToggle("fast", function() {
+            $("#dataHiddenReminder").fadeToggle("fast")
         })
         $("#showData").css("transform", "rotate(0deg)")
     }
@@ -44,8 +45,7 @@ function sub(num) {
 // Run program function
 function runCode() {
     window.toRun = true
-    $("#run").css("background-color", "#bbb")
-    $("#stop").css("background-color", "#666")
+    toggle()
     let speedSlider = $("#speed")
     let dindex = 0
     let cindex = 0
@@ -99,7 +99,7 @@ function runCode() {
         for(let i = 1; i < data.length; i++)
             $("#data").append($("<div id='"+i+"'></div>").text(data[i]));
         updatePtr(0)
-        end()
+        toggle()
     }
     function iterLoop() {
         if(cindex < code.length) {
@@ -113,8 +113,7 @@ function runCode() {
                 dindex += 1
                 if(dindex >= data.length) {
                     data.push(0)
-                    $("#data").append(
-                    $("<div id="+(data.length-1)+"></div>").text("0").css("animation", "slidein 0.7s").css("-webkit-animation", "slidein 0.7s")) 
+                    $("#data").append($("<div id="+(data.length-1)+"></div>").text("0"))
                 }
                 updatePtr(dindex-1)
             } else if(code[cindex] == "<") {
@@ -146,19 +145,21 @@ function runCode() {
             if(window.toRun) {
                 setTimeout(function(){iterLoop()}, 100 - speedSlider.val())
             } else {
-                end()
+                toggle()
             }
         } else {
-            end()
+            toggle()
         }
     }
     function updatePtr(origin) { // origin is where the ptr used to be
         $("#"+origin).css({"background-color":"#808080", "transform":"scale(1.0, 1.0)"})
         $("#"+dindex).css({"background-color":"#222", "transform":"scale(1.05, 1.1)"})
     }
-    function end() {
-        $("#run").css("background-color", "#444")
-        $("#stop").css("background-color", "#bbb")
+    function toggle() {
+        // $("#run").css("background-color", "#444")
+        // $("#stop").css("background-color", "#bbb")
+        $("#run").toggle()
+        $("#stop").toggle()
     }
     if(!window.dataShown){
         // If the data area is hidden, immediately run the program

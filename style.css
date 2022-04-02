@@ -1,31 +1,17 @@
-@keyframes slidein {
-    0% { transform:scale(0.5, 0.2); }
-    50% { transform:scale(0.75, 0.6); }
-    95% { transform:scale(1.1, 1.3); }
-    100% { transform:scale(1.05, 1.1); }
-}
-
-@-webkit-keyframes slidein {
-    0% { transform:scale(0.5, 0.2); }
-    50% { transform:scale(0.75, 0.6); } 
-    95% { transform:scale(1.1, 1.3); }
-    100% { transform:scale(1.05, 1.1); }
-}
-
 body {
     padding:60px;
 }
 
 #run, #stop {
-    height:41px;
+    height:45px;
     width:70px;
     background-color:#444;
     border-width:0px;
     border-radius:10px;
 }
 
-#stop {
-    background-color:#bbb;
+img[src="svgs/stop.svg"] {
+    transform:translate(0px, 2px);
 }
 
 #showData {
@@ -101,7 +87,6 @@ span {
 }
 
 #data {
-    width:90%;
     background-color:#eee;
     padding:2px;
     margin-left:5px;
