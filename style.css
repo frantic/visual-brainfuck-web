@@ -17,10 +17,11 @@ img[src="svgs/stop.svg"] {
 #showData {
     height:25px;
     width:25px;
-    transform:rotate(45deg);
     margin-right:10px;
     margin-top:10px;
-    background-color:#666;
+    padding:2px;
+    transform:rotate(90deg);
+    background-color:#fff;
     border-width:0px;
     border-radius:0px;
 }
@@ -33,6 +34,7 @@ span {
     transform:scale(1.3, 1.3);
     width:25px;
     height:17px;
+    margin-left:10px;
 }
 
 #speed {

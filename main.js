@@ -14,7 +14,7 @@ function toggleData(){ // Show | Hide the data area
         $("#dataHiddenReminder").fadeToggle("fast", function() {
             $("#data").slideToggle("fast")
         })
-        $("#showData").css("transform", "rotate(45deg)")
+        $("#showData").css("transform", "rotate(90deg)")
     } else {
         $("#data").slideToggle("fast", function() {
             $("#dataHiddenReminder").fadeToggle("fast")
