@@ -5,7 +5,9 @@ body {
 #run, #stop {
     height:45px;
     width:70px;
-    background-color:#444;
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+    background: linear-gradient(to right, #26D0CE, #1A2980);
     border-width:0px;
     border-radius:10px;
 }
