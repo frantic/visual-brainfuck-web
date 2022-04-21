@@ -5,12 +5,16 @@ body {
 #run, #stop {
     height:45px;
     width:70px;
-    background: #1A2980;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
-    background: linear-gradient(to right, #26D0CE, #1A2980);
+    background: #575757;
     border-width:0px;
     border-radius:10px;
 }
+
+#run {
+    background-color:#0aaf09;
+    border-color:#0a801f;
+    border-width:4px;
+} 
 
 img[src="svgs/stop.svg"] {
     transform:translate(0px, 2px);
@@ -91,7 +95,7 @@ span {
 }
 
 #data {
-    background-color:#eee;
+    background-color:#ddd;
     padding:2px;
     margin-left:5px;
     border-radius:5px;

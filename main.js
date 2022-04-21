@@ -156,8 +156,6 @@ function runCode() {
         $("#"+dindex).css({"background-color":"#222", "transform":"scale(1.05, 1.1)"})
     }
     function toggle() {
-        // $("#run").css("background-color", "#444")
-        // $("#stop").css("background-color", "#bbb")
         $("#run").toggle()
         $("#stop").toggle()
     }
