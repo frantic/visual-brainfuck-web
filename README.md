@@ -3,6 +3,7 @@
 ![](imgs/website.jpeg)
 
 A Brainf\*ck interpreter online. Visit [visual-brainfuck-web Github Page](https://zhangzheheng12345.github.io/visual-brainfuck-web) to have a try.
+
 If you don't have any idea about what Brainf\*ck exactly is, visit [Brainf\*ck Wiki](https://esolangs.org/wiki/brainfuck).
 
 ## Usage
@@ -40,6 +41,8 @@ The trash bin button enables you to clear the Brainf\*ck code in the text area i
 Be free to put forward issues. The website has only been tested on Safari and Chrome, and there might be problems while running in Microsoft Edge.
 
 Anyway, send email to me ( visit my Github profile to find my email ) or put an issue in Github if you meet any sort of mistake. If you are quite interested in this project and want to have a further contribution, fork & start YOUR Pull Request!
+
+In the future, code minifying, step-by-step debugging may be supported.
 
 ## License and thanks
 
