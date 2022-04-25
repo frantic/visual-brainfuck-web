@@ -2,10 +2,9 @@ body {
     padding:60px;
 }
 
-#run, #stop {
+.tool-button {
     height:45px;
     width:70px;
-    background: #575757;
     border-width:0px;
     border-radius:10px;
 }
@@ -14,10 +13,24 @@ body {
     background-color:#0aaf09;
     border-color:#0a801f;
     border-width:3px;
-} 
+}
+
+#stop {
+    background:#575757;
+}
+
+#minify {
+    background-color:#7947c2;
+    border-color:#5a3796;
+    border-width:3px;
+}
 
 img[src="svgs/stop.svg"] {
     transform:translate(0px, 2px);
+}
+
+img[src="svgs/lightning.svg"] {
+    transform:translate(2px, 2px);
 }
 
 #showData {
