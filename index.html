@@ -5,11 +5,11 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-        <button id="run" class="tool-button" onclick="runCode()">
+        <button id="run" class="tool-button" title="run the program" onclick="runCode()">
             <img src="svgs/play.svg" type="image/svg+xml" /></button>
-        <button id="stop" class="tool-button" onclick="window.toRun = false;">
+        <button id="stop" class="tool-button" title="stop the program" onclick="window.toRun = false;">
             <img src="svgs/stop.svg" type="image/svg+xml" /></button>
-        <button id="minify" class="tool-button" onclick="minify()">
+        <button id="minify" class="tool-button" title="minify the codes" onclick="minify()">
             <img src="svgs/lightning.svg" type="image/svg+xml" /></button> 
         <input id="speed" type="range" min="0" max="100" value="60" step="2"/>
         <br/>

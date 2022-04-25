@@ -29,6 +29,13 @@ function clearCode(){
 function saveCode(){
     $.cookie(cookieName, $("#text").val(), {expires:365})
 }
+function minify(){
+    let origin = $("#text").val()
+    let res = ""
+    for(let i = 0; i < origin.length; i++)
+        res += origin[i] === '\n' ? "" : origin[i];
+    $("#text").val(res)
+}
 
 function add(num) {
     num += 1
