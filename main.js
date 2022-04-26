@@ -29,12 +29,19 @@ function clearCode(){
 function saveCode(){
     $.cookie(cookieName, $("#text").val(), {expires:365})
 }
-function minify(){
-    let origin = $("#text").val()
+function minifyButton() {
+    $("#text").val(minify($("#text").val()))
+}
+function minify(origin){
     let res = ""
-    for(let i = 0; i < origin.length; i++)
-        res += origin[i] === '\n' ? "" : origin[i];
-    $("#text").val(res)
+    for(let i = 0; i < origin.length; i++) { 
+        if(origin[i] != '\n' && origin[i] != ' ' && origin[i] != '\t') {
+            if(origin[i] == '#') {
+                for(; i < origin.length && origin[i] != '\n'; i++);
+            } else res += origin[i];
+        }
+    }
+    return res
 }
 
 function add(num) {
@@ -57,7 +64,7 @@ function runCode() {
     let dindex = 0
     let cindex = 0
     let iindex = 0
-    let code = $("#text").val()
+    let code = minify($("#text").val())
     let input = $("#io").val()
     $("#io").val("")
     let data = [0]
