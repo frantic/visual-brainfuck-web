@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>visual-brainfuck-web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>visual-brainfuck-web</title> 
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
@@ -9,7 +10,7 @@
             <img src="svgs/play.svg" type="image/svg+xml" /></button>
         <button id="stop" class="tool-button" title="stop the program" onclick="window.toRun = false;">
             <img src="svgs/stop.svg" type="image/svg+xml" /></button>
-        <button id="minify" class="tool-button" title="minify the codes" onclick="minify()">
+        <button id="minify" class="tool-button" title="minify the codes" onclick="minifyButton()">
             <img src="svgs/lightning.svg" type="image/svg+xml" /></button> 
         <input id="speed" type="range" min="0" max="100" value="60" step="2"/>
         <br/>
@@ -70,6 +71,7 @@
         <p> License: GPL 2.0</p>
         <script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="run.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
