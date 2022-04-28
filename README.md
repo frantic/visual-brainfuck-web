@@ -6,6 +6,8 @@ A Brainf\*ck interpreter online. Visit [visual-brainfuck-web Github Page](https:
 
 If you don't have any idea about what Brainf\*ck exactly is, visit [Brainf\*ck Wiki](https://esolangs.org/wiki/brainfuck).
 
+The website use jQuery and MVC.
+
 ## Usage
 
 ### To run & stop

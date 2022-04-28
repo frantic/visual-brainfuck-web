@@ -1,5 +1,5 @@
 body {
-    padding:10%;
+    padding:5%;
 }
 
 .tool-button {
@@ -96,7 +96,7 @@ span {
 
 #wrapData {
     display:flex;
-    margin:5px;
+    margin:10px;
     margin-left:1px;
     min-height:42px;
 }
