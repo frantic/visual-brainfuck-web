@@ -10,6 +10,7 @@ function runCode() {
     let dindex = 0
     let cindex = 0
     let iindex = 0
+    $("#text").attr("readonly", "")
     let code = minify($("#text").val())
     let input = $("#io").val()
     $("#io").val("")
@@ -43,6 +44,7 @@ function runCode() {
     function toggle() {
         $("#run").toggle()
         $("#stop").toggle()
+        $("#text").removeAttr("readonly")
     }
     function immRun() {
         while(cindex < code.length && window.toRun) {
@@ -60,7 +62,16 @@ function runCode() {
                     dindex -= 1
                 }
             } else if(code[cindex] == "[") {
-                stack.push(cindex)
+                if(data[dindex])
+                    stack.push(cindex);
+                else {
+                    cindex++
+                    let count = 1
+                    for(; cindex < code.length && window.toRun && count; cindex++) {
+                        if(code[cindex] == '[') count++;
+                        else if(code[cindex] == ']') count--;
+                    }
+                }
             } else if(code[cindex] == "]") {
                 if(data[dindex])
                     cindex = stack[stack.length - 1];
