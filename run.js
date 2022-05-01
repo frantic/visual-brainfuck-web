@@ -80,13 +80,13 @@ function runCode() {
             } else if(code[cindex] == ",") {
                 getInput()
             } else if(code[cindex] == ".") {
-                ouput()
+                output()
             } else if(code[cindex] == "#") {
                 while(cindex < code.length && code[cindex] != "\n") {
                     cindex += 1
                 }
             }
-            cindex += 1
+            cindex++
         }
         // Update the data area in the end
         for(let i = 1; i < data.length; i++)
